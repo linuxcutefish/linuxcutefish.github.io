@@ -1,0 +1,75 @@
+I"—<div align="center">
+    <h1>MPR Package Repositorie</h1>
+<p><a href="https://github.com/cutefishos-ubuntu/mpr-packages" target="_blank" rel="noopener">GitHub MPR-Packages</a></p>
+    <img height="150" src="https://dl.uploadgram.me/6119620f0356eh?raw" />
+</div>
+
+<p>This repository contains the PKGBUILDs of <strong>Cutefish Desktop</strong> environment in <a href="https://mpr.hunterwittenborn.com/packages/?K=titenko&amp;SeB=m">MPR</a> (<em>Makedeb Package Repository</em>) . If there is problem with each of them, please submit an issue and explain the problem.</p>
+
+<h1 id="installation">Installation</h1>
+
+<h2 id="tap">Tap</h2>
+
+<p>These packages are available in <a href="https://mpr.hunterwittenborn.com/packages/?K=titenko&amp;SeB=m">MPR</a>. You can install them easily with your <a href="https://github.com/hwittenborn/tap">Tap</a>  helper of choice.</p>
+
+<pre><code>tap install fishui libcutefish cutefish-wallpapers cutefish-statusbar cutefish-settings cutefish-qt-plugins cutefish-launcher cutefish-kwin-plugins cutefish-icons cutefish-filemanager cutefish-dock cutefish-core cutefish-screenlocker cutefish-calculator 
+</code></pre>
+
+<h2 id="mpm">Mpm</h2>
+
+<p>These packages are available in <a href="https://mpr.hunterwittenborn.com/packages/?K=titenko&amp;SeB=m">MPR</a>. You can install them easily with your <a href="https://github.com/cutefishos-ubuntu/mpm">Mpm</a>  helper of choice.</p>
+
+<pre><code>mpm install fishui libcutefish cutefish-wallpapers cutefish-statusbar cutefish-settings cutefish-qt-plugins cutefish-launcher cutefish-kwin-plugins cutefish-icons cutefish-filemanager cutefish-dock cutefish-core cutefish-screenlocker cutefish-calculator
+</code></pre>
+
+<h2 id="local-build">Local build</h2>
+
+<p><a href="https://github.com/makedeb/makedeb">makedeb</a> takes PKGBUILD files and creates Debian packages installable with APT.</p>
+
+<p>To build a package, you need to clone this repository:</p>
+
+<pre><code>git clone https://github.com/cutefishos-ubuntu/mpr-packages.git
+</code></pre>
+
+<p>Download and install <strong>makedeb</strong></p>
+
+<p><strong>Using Tap or Mpm</strong></p>
+
+<p><strong>Tap:</strong></p>
+
+<pre><code>tap install makedeb
+</code></pre>
+
+<p><strong>Mpm:</strong></p>
+
+<pre><code>mpm install makedeb
+</code></pre>
+
+<p><strong>From the official repository:</strong></p>
+
+<p>First, add the signing key:</p>
+
+<pre><code>wget -qO - 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &amp;&gt; /dev/null
+</code></pre>
+
+<p>Next, add the repository information to your system:</p>
+
+<pre><code>echo 'deb [signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://proget.hunterwittenborn.com/ makedeb main' | sudo tee /etc/apt/sources.list.d/makedeb.list
+</code></pre>
+
+<p>Lastly, update the repository cache on your system:</p>
+
+<pre><code>sudo apt update
+</code></pre>
+
+<p>Install makedeb</p>
+
+<pre><code>sudo apt install makedeb
+</code></pre>
+
+<p><strong>Building the package:</strong></p>
+
+<p>Open the folder with the required package and run the <code>makedeb</code> command in the terminal</p>
+
+<p>For detailed instructions use the command <code>makedeb --help</code></p>
+:ET

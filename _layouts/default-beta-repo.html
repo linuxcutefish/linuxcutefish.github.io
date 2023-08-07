@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/repository/style.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3075431923852009"
+     crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PXWBYKLNGL"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'G-PXWBYKLNGL');
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    
+      <div style="padding: 0 10px; background-color: #343a40;" class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name-beta"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description-beta">{{ site.description }}</p>
+          </div>
+
+          <nav-beta>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
+            <a href="https://cutefishos.discourse.group/">Forum</a>
+            <a href="{{ site.baseurl }}/features">Features</a>
+            <a href="{{ site.baseurl }}/download">Download</a>
+            <a href="{{ site.baseurl }}/repository">Packages</a>
+            <a href="{{ site.baseurl }}/donate">Donate</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+          </nav-beta>
+        </header>
+      </div>
+    
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+<div class="wrapper-footer">
+
+    <footer id="myFooterBeta">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Menu:</h5>
+                    <ul>
+                        <li><a href="{{ site.baseurl }}/">Home</a></li>
+                        <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                        <li><a href="https://cutefishos.discourse.group/">Forum</a></li>
+                        <li><a href="{{ site.baseurl }}/features">Features</a></li>
+                        <li><a href="{{ site.baseurl }}/download">Download</a></li>
+                        <li><a href="{{ site.baseurl }}/repository">Packages</a></li>
+                        <li><a href="{{ site.baseurl }}/donate">Donate</a></li>
+                        <li><a href="{{ site.baseurl }}/privacy">Privacy & Cookies</a></li>
+                        <li><a href="{{ site.baseurl }}/about">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Friends:</h5>
+                    <ul>
+                        <li><a href="https://mpr.hunterwittenborn.com/">MPR</a></li>
+                        <li><a href="https://github.com/makedeb">Makedeb</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Community:</h5>
+                    <ul>
+                        <li><a href="https://sourceforge.net/projects/cutefish-ubuntu/">SourceForge</a></li>
+                        <li><a href="https://t.me/cutefishos_ubuntu">Telegram Group</a></li>
+                        <li><a href="https://t.me/cutefishos_ubuntu_chat">Telegram Chat</a></li>
+                        <li><a href="https://discord.gg/tRXpm4JP">Discord</a></li>
+                        <li><a href="https://github.com/cutefishos-ubuntu">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5>About:</h5>
+                    <p> CutefishOS is an elegant, beautiful and easy-to-use Linux desktop operating system. It runs Cutefish Desktop has a modern style design. Our goal is to provide users with a comfortable interface design, better user experience and a better choice. </p>
+                    <h5>Donate:</h5>
+                <ul>
+                    <li><a href="https://www.paypal.com/donate?hosted_button_id=S7WAC4BVRUAFJ">PayPal</a></li>
+                    <li><a href="https://ko-fi.com/cutefishos">Ko-Fi</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="second-bar">
+           <div class="footer-container">
+                <div style="text-align: left;">
+                <a style="text-align: left;" href="{{ site.baseurl }}/"> CutefishOS Reborn </a>
+                <div class="social-icons">
+                    <a href="https://github.com/titenko" class="github"><i class="fa fa-github"></i></a>
+                    <a href="https://t.me/maksymtitenko" class="telegram"><i class="fa fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center;">CutefishOS Reborn © 2021-2023 Maksym Titenko
+<br />Debian is a registered trademark of Software in the Public Interest, Inc. (Software in the public interest).
+<br />Ubuntu is a Trademark of Canonical Ltd. CutefishOS is a Trademark of CutefishOS Team.
+<br />Linux ® is the registered trademark of Linus Torvalds in the U.S. and other countries.<p/>
+        </div>
+    </footer>
+    </div>
+
+    {% include analytics.html %}
+    
+    <script src="{{ site.baseurl }}/assets/repository/search.js"></script>
+    <script src="{{ site.baseurl }}/assets/repository/script.js"></script>
+    <script src="{{ site.baseurl }}/assets/repository/download.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+---
+title: CutefishOS
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+name: CutefishOS
+email: your-email@example.com
+description: CutefishOS Reborn
+avatar: https://raw.githubusercontent.com/cutefish-ubuntu/cutefish-ubuntu.github.io/master/branding/Cutefish-Logo.svg
+baseurl: 
+url: https://linuxcutefish.github.io/
+disqus: cutefishos-reborn
+google_analytics: G-PXWBYKLNGL
+markdown: kramdown
+highlighter: pygments
+permalink: "/:title/"
+remote_theme: jekyll-now
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+sass:
+  style: expanded
+exclude:
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md

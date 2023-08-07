@@ -1,0 +1,159 @@
+#myFooterBeta {
+    background-color: #343a40;
+    color: white;
+    text-align: left;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%
+}
+
+#myFooterBeta .row {
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+#myFooterBeta .info{
+    text-align: justify;
+    color: #afb0b1;
+}
+
+#myFooterBeta ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooterBeta h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooterBeta .logo{
+    margin-top: 10px;
+}
+
+#myFooterBeta .second-bar .logo a{
+    color:white;
+    font-size: 28px;
+    float: left;
+    font-weight: bold;
+    line-height: 68px;
+    margin: 0;
+    padding: 0;
+}
+
+#myFooterBeta a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooterBeta a:hover,
+#myFooterBeta a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooterBeta .second-bar {
+    text-align: center;
+    background-color: #343a40;
+    text-align: center;
+}
+
+#myFooterBeta .second-bar a {
+    font-size: 22px;
+    color: #9fa3a9;
+    padding: 10px;
+    transition: 0.2s;
+    line-height: 68px;
+}
+
+#myFooterBeta .second-bar a:hover {
+    text-decoration: none;
+}
+
+#myFooterBeta .social-icons {
+    float:right;
+}
+
+#myFooterBeta .github:hover {
+    color: #191919;
+}
+
+#myFooterBeta .telegram:hover {
+    color: #249bd7;
+}
+
+#myFooterBeta .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooterBeta .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooterBeta .twitter:hover {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooterBeta {
+        text-align: center;
+    }
+
+    #myFooterBeta .info{
+        text-align: center;
+    }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooterBeta{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+#myFooterBeta .footer-container {
+    margin: 0 auto;
+ // max-width: 740px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.col-sm-3 {
+position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px
+}
+@media (min-width:768px){
+    .col-sm-3{
+    float:left
+    }
+.col-sm-3{
+    width:25%
+    }
+}

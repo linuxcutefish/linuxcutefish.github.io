@@ -1,0 +1,84 @@
+I"h<h2 id="download">Download:</h2>
+
+<p><strong>Mega:</strong> <a href="https://bit.ly/3Dcyd7s">CutefishOS Ubuntu v0.4 Beta Developer Edition</a><br />
+<strong>Direct link:</strong> <a href="https://bit.ly/3k8k5U3">CutefishOS Ubuntu v0.4 Beta Developer Edition</a></p>
+
+<h2 id="whats-new">What’s new?</h2>
+
+<p>CutefishOS Ubuntu v0.4 Update List</p>
+
+<h2 id="cutefish-repository">Cutefish repository</h2>
+
+<p>CutefishOS package repository and all required dependencies.</p>
+
+<h2 id="package-manager">Package manager</h2>
+
+<p>Alternative package manager for Cutefish repository. The new package manager will allow you to quickly install updates that will be rolled out according to the Rolling Release model.</p>
+
+<p><strong>How to use:</strong><br />
+Usage: tap (command) (packages/options)  <br />
+For example: <br />
+<code>tap install cutefish-core</code>   <br />
+<em>Use without sudo</em></p>
+
+<p><strong>Commands:</strong><br />
+install - Install packages  <br />
+update, upgrade - Update packages  <br />
+search - Search for packages  <br />
+list-packages - List installed packages built from the MPR</p>
+
+<p><strong>Options:</strong><br />
+-e, –min-info Print extra information when using ‘search’  <br />
+-h, –help Bring up this help menu  <br />
+-L, –skip-less-pipe Don’t pipe output from ‘list-packages’ into ‘less’ when output is taller than the terminal height  <br />
+-R, –rev-alpha Sort results from ‘search’ and ‘list-packages’ from Z-A instead of A-Z  <br />
+-V, –version Print version information and exit</p>
+
+<h2 id="alternative-settings-center">Alternative Settings Center</h2>
+
+<p>Alternative Settings Center - Advanced System Settings.</p>
+
+<h2 id="calamares">Calamares</h2>
+
+<p>Updated Calamares with Qt shell, fixed flags, default Brtfs markup in automatic mode. Option to enable/disable Swap</p>
+
+<h2 id="zram">zRam</h2>
+
+<p>zRam by default with automatic configuration during system installation.</p>
+
+<h2 id="pipewire">PipeWire</h2>
+
+<p>PipeWire is also configured by default to work correctly, in the alternative settings center, additional settings for PipeWire have been added</p>
+
+<h2 id="settings">Settings</h2>
+
+<ul>
+  <li>New mouse theme</li>
+  <li>New mouse options: natural scrolling, left-handed mode, pointer speed</li>
+  <li>Added power management, can switch to power saving mode and performance mode</li>
+  <li>New date and time page</li>
+  <li>New health items on the battery page</li>
+  <li>Added system effects option on the Appearance page</li>
+</ul>
+
+<h2 id="file-manager">File Manager</h2>
+
+<ul>
+  <li>Add to open with dialog</li>
+  <li>Support picture thumbnail</li>
+</ul>
+
+<h2 id="status-bar">Status Bar</h2>
+
+<ul>
+  <li>Add the Mpris media control item to the statusbar control window</li>
+  <li>Increase stability</li>
+</ul>
+
+<h2 id="desktop">Desktop</h2>
+
+<ul>
+  <li>Improve font rendering</li>
+  <li>Add lock screen interface</li>
+</ul>
+:ET
