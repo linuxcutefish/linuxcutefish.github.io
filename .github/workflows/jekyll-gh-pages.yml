@@ -17,25 +17,24 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Ruby for Jekyll
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # можешь изменить на версию из Gemfile
+          ruby-version: '3.1'
 
-      - name: Install dependencies
+      - name: Install Bundler & Dependencies
         run: |
           gem install bundler
           bundle install
 
-      - name: Build the site with Jekyll
+      - name: Build Jekyll site
         run: bundle exec jekyll build
 
-      - name: Upload site output
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
