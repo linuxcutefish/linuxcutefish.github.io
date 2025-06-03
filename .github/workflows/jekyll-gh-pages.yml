@@ -27,7 +27,7 @@ jobs:
         with:
           ruby-version: '3.1'
 
-      - name: 🧩 Debug: Print current directory and files
+      - name: 🧩 Debug Print current directory and files
         run: |
           echo "::group::Project Root Content"
           pwd
