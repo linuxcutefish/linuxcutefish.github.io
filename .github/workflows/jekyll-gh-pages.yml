@@ -1,4 +1,4 @@
-name: Build and Deploy Jekyll site to GitHub Pages
+name: Build and Deploy Jekyll site to GitHub Pages (with Debug)
 
 on:
   push:
@@ -17,30 +17,52 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: 📁 Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Ruby
+      - name: 💎 Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
 
-      - name: Install Bundler & Dependencies
+      - name: 🧩 Debug: Print current directory and files
+        run: |
+          echo "::group::Project Root Content"
+          pwd
+          ls -la
+          echo "::endgroup::"
+
+      - name: 📦 Install Bundler and Gems
         run: |
           gem install bundler
           bundle install
 
-      - name: Clean _site directory
-        run: rm -rf _site
+      - name: 🧹 Clean _site directory
+        run: |
+          echo "::group::Cleaning _site"
+          rm -rf _site
+          mkdir _site
+          echo "::endgroup::"
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
+      - name: 🛠️ Build Jekyll Site
+        run: |
+          echo "::group::Jekyll Build Output"
+          bundle exec jekyll build --trace --verbose
+          echo "::endgroup::"
 
-      - name: Upload site artifact
+      - name: 🔍 Debug: Check built _site directory
+        run: |
+          echo "::group::Built Site Files"
+          ls -la _site
+          echo "::endgroup::"
+
+      - name: 📤 Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
+          name: github-pages
 
   deploy:
     needs: build
@@ -48,7 +70,14 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
+
+      - name: 🧪 Debug: Deployment output
+        if: always()
+        run: |
+          echo "Deployment status: ${{ steps.deployment.outcome }}"
+          echo "Page URL: ${{ steps.deployment.outputs.page_url }}"
