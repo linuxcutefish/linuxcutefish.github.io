@@ -52,7 +52,7 @@ jobs:
           bundle exec jekyll build --trace --verbose
           echo "::endgroup::"
 
-      - name: 🔍 Debug: Check built _site directory
+      - name: 🔍 Debug Check built _site directory
         run: |
           echo "::group::Built Site Files"
           ls -la _site
@@ -76,7 +76,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: 🧪 Debug: Deployment output
+      - name: 🧪 Debug Deployment output
         if: always()
         run: |
           echo "Deployment status: ${{ steps.deployment.outcome }}"
